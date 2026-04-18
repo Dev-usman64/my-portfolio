@@ -32,12 +32,12 @@ export default function Testimonials() {
 
     return (
         <section className="relative isolate overflow-hidden bg-white px-6 py-24 sm:py-32 lg:px-8 bg-[url('/bg-testimonial.png')] bg-cover bg-center bg-no-repeat">
-            {/* Background Decorations */}
+
 
             <div className="absolute inset-0 -z-10 bg-[radial-gradient(45rem_50rem_at_top,var(--tw-gradient-from),white)] from-indigo-100 opacity-20 dark:from-indigo-500/10" />
 
             <div className="mx-auto max-w-2xl lg:max-w-4xl relative">
-                {/* Testimonial Content with Animation */}
+
                 <motion.div
                     key={currentIndex}
                     initial={{ opacity: 0, x: 20 }}

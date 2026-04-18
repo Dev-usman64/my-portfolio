@@ -32,7 +32,10 @@ export function Hero() {
                             lg:justify-start
                             xl:justify-start
                             ">
-                                <button className="
+                                <a
+                                    href="https://wa.me/+923262859331"
+                                    target='_blank'
+                                    className="
                                bg-black  text-white px-5 rounded inline-flex justify-between w-40 py-2 hover:cursor-pointer
                                mt-6
                                sm:mt-6 sm:bg-black  sm:text-2xl
@@ -40,9 +43,9 @@ export function Hero() {
                                lg:mt-6 lg:text-lg
                                xl:mt-6 xl:text-lg
                                ">
-                                    Let's Start
+                                    Let's talk
                                     <ArrowRightCircle className='' />
-                                </button>
+                                </a>
                             </div>
                         </div>
 

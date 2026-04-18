@@ -42,7 +42,7 @@ export function Navbar() {
 
                     {/* Connect Button (Desktop) */}
                     <div className="hidden md:flex items-center">
-                        <a href="#about" className="bg-blue-600 hover:bg-blue-700 text-white px-5 py-2 rounded-full text-sm font-medium transition-all duration-300 shadow-md hover:shadow-lg hover:-translate-y-0.5">
+                        <a href="https://wa.me/+923262859331" target='_blank' className="bg-blue-600 hover:bg-blue-700 text-white px-5 py-2 rounded-full text-sm font-medium transition-all duration-300 shadow-md hover:shadow-lg hover:-translate-y-0.5">
                             Let's Talk
                         </a>
                     </div>

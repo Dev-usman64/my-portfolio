@@ -56,11 +56,11 @@ export function Faq() {
                     {faqData.map((data) => {
                         const isOpen = openIndex === data.id;
                         return (
-                            <div 
-                                key={data.id} 
+                            <div
+                                key={data.id}
                                 className={`bg-white rounded-2xl shadow-sm border transition-colors duration-300 ${isOpen ? 'border-blue-200 ring-4 ring-blue-50' : 'border-gray-100 hover:border-blue-100'}`}
                             >
-                                <button 
+                                <button
                                     className="group flex items-center justify-between w-full px-6 py-5 text-left focus:outline-none cursor-pointer"
                                     onClick={() => toggleAccordion(data.id)}
                                 >
@@ -73,7 +73,7 @@ export function Faq() {
                                         </svg>
                                     </span>
                                 </button>
-                                <div 
+                                <div
                                     className={`grid transition-all duration-300 ease-in-out ${isOpen ? 'grid-rows-[1fr] opacity-100' : 'grid-rows-[0fr] opacity-0'}`}
                                 >
                                     <div className="overflow-hidden">
@@ -86,11 +86,11 @@ export function Faq() {
                         );
                     })}
                 </div>
-                
+
                 {/* Contact CTA inside FAQ */}
                 <div className="mt-12 text-center bg-blue-50 rounded-2xl p-8 border border-blue-100 shadow-inner">
                     <p className="text-blue-950 text-lg font-medium mb-3">Still have questions?</p>
-                    <a href="#about" className="inline-flex items-center text-blue-600 font-semibold hover:text-blue-700 transition-colors cursor-pointer group">
+                    <a href="https://wa.me/+923262859331" target='_blank' className="inline-flex items-center text-blue-600 font-semibold hover:text-blue-700 transition-colors cursor-pointer group">
                         Let's get in touch
                         <svg className="w-5 h-5 ml-2 transform group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />

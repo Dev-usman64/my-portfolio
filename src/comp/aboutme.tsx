@@ -2,8 +2,8 @@ import { div } from "motion/react-client";
 
 export function AboutMe() {
     return (
-        <div className="bg-white mt-20">
-            <section className="bg-opacity-30 pt-20 sm:py-16 lg:py-24">
+        <div className="bg-white mt-20 pb-20 ">
+            <section className="bg-opacity-30 pt-20 sm:py-16 sm:pt-20 lg:py-24 lg:pt-20">
                 <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
                     <div className="grid items-center grid-cols-1 gap-12 md:grid-cols-2">
                         <div className=" flex justify-center-safe align-middle">

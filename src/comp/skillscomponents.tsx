@@ -4,7 +4,7 @@ export function Skills() {
         {
             id: 1,
             title: "CMS Solutions",
-            img: "/iconpng/wordpress-icon.png",
+            img: "../public/iconpng/wordpress-icon.png",
             desc: "Professional WordPress & Elementor specialist.",
             gradient: "from-[#34d399] to-[#0f766e]", // green
             shadow: "shadow-green-300"
@@ -12,7 +12,7 @@ export function Skills() {
         {
             id: 2,
             title: "React Dev",
-            img: "iconpng/react-icon.png",
+            img: "../public/iconpng/react-icon.png",
             desc: "High-performance apps using React 19.",
             gradient: "from-[#1e40af]  to-[#312e81]", // blue
             shadow: "shadow-blue-300"
@@ -20,7 +20,7 @@ export function Skills() {
         {
             id: 3,
             title: "Modern Styling",
-            img: "iconpng/tailwind-icon.png",
+            img: "../public/iconpng/tailwind-icon.png",
             desc: "Clean UIs with help of Tailwind CSS.",
             gradient: "from-[#fb7185] to-[#ef4444]", // rose
             shadow: "shadow-rose-300"
@@ -28,7 +28,7 @@ export function Skills() {
         {
             id: 4,
             title: "Scalable Logic",
-            img: "iconpng/typescript-icon.png",
+            img: "../public/iconpng/typescript-icon.png",
             desc: "Type-safe code with TypeScript for Apps.",
             gradient: "from-[#a855f7] to-[#581c87]", // purple
             shadow: "shadow-purple-300"

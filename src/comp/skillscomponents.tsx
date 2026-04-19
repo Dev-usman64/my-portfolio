@@ -4,7 +4,7 @@ export function Skills() {
         {
             id: 1,
             title: "CMS Solutions",
-            img: "iconpng/wordpress-icon.png",
+            img: "/iconpng/wordpress-icon.png",
             desc: "Professional WordPress & Elementor specialist.",
             gradient: "from-[#34d399] to-[#0f766e]", // green
             shadow: "shadow-green-300"

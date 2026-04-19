@@ -22,11 +22,11 @@ export default function Testimonials() {
         }
     ];
 
-    // Auto-play logic
+
     useEffect(() => {
         const timer = setInterval(() => {
             setCurrentIndex((prev) => (prev === testimonials.length - 1 ? 0 : prev + 1));
-        }, 10000); // 10 seconds baad change hoga
+        }, 10000); // 10 seconds
         return () => clearInterval(timer);
     }, [testimonials.length]);
 
@@ -69,7 +69,7 @@ export default function Testimonials() {
                     </figure>
                 </motion.div>
 
-                {/* Carousel Dots */}
+
                 <div className="mt-5 flex justify-center space-x-3">
                     {testimonials.map((_, index) => (
                         <button

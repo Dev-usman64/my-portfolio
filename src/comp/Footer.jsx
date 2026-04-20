@@ -13,10 +13,12 @@ export function Footer() {
 
     return (
         <footer className="bg-white border-t border-gray-300 pt-16 pb-8">
-            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 items-center">
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-12 lg:gap-8 mb-12">
-                    {/* Brand */}
-                    <div className="flex flex-col space-y-4">
+            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-12 lg:gap-8 mb-12 text-center md:text-left">
+
+
+                    <div className="flex flex-col items-center md:items-start space-y-4">
                         <a href="#home" className="text-2xl font-extrabold tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-indigo-600 inline-block w-fit">
                             M.USMAN
                         </a>
@@ -25,26 +27,27 @@ export function Footer() {
                         </p>
                     </div>
 
-                    {/* Quick Links */}
-                    <div className="flex flex-col space-y-4">
+
+                    <div className="flex flex-col items-center md:items-start space-y-4">
                         <h3 className="text-gray-900 font-semibold text-lg mb-2">Quick Links</h3>
-                        <ul className="flex flex-col space-y-3">
+                        <ul className="flex flex-col space-y-3 items-center md:items-start">
                             {quickLinks.map((link) => (
                                 <li key={link.name}>
                                     <a
                                         href={link.href}
                                         className="text-gray-500 hover:text-blue-600 transition-colors duration-300 text-sm w-fit flex items-center group"
                                     >
-                                        <span className="w-1.5 h-1.5 rounded-full bg-black mr-3 opacity-0 group-hover:opacity-100 transition-opacity transform -translate-x-2 group-hover:translate-x-0 duration-300"></span>
-                                        <span className="transform -translate-x-4 group-hover:translate-x-0 transition-transform duration-300">{link.name}</span>
+
+                                        <span className="hidden md:inline-block w-1.5 h-1.5 rounded-full bg-black mr-3 opacity-0 group-hover:opacity-100 transition-opacity transform -translate-x-2 group-hover:translate-x-0 duration-300"></span>
+                                        <span className="transform md:-translate-x-4 md:group-hover:translate-x-0 transition-transform duration-300">{link.name}</span>
                                     </a>
                                 </li>
                             ))}
                         </ul>
                     </div>
 
-                    {/* Contact or Socials */}
-                    <div className="flex flex-col space-y-4">
+
+                    <div className="flex flex-col items-center md:items-start space-y-4">
                         <h3 className="text-gray-900 font-semibold text-lg mb-2">Connect</h3>
                         <div className="flex space-x-4">
                             <a href="https://github.com/Dev-usman64" className="w-10 h-10 rounded-full bg-gray-50 flex items-center justify-center text-gray-500 hover:bg-black hover:text-white transition-all duration-300 shadow-sm" target='_blank' aria-label="GitHub">
@@ -65,9 +68,8 @@ export function Footer() {
                     </div>
                 </div>
 
-                {/* Bottom Bar */}
-                <div className="border-t border-gray-100 pt-8 items-center space-y-4 
-">
+
+                <div className="border-t border-gray-100 pt-8">
                     <p className="text-black text-sm text-center">
                         &copy; {currentYear} Portfolio. All rights reserved.
                     </p>

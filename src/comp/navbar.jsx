@@ -22,7 +22,7 @@ export function Navbar() {
                     {/* Logo Area */}
                     <div className="flex-shrink-0 flex items-center">
                         <a href="#home" className="text-2xl font-extrabold tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-indigo-600 hover:scale-105 transition-transform duration-300">
-                            Portfolio
+                            M.USMAN
                         </a>
                     </div>
 

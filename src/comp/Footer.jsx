@@ -13,12 +13,12 @@ export function Footer() {
 
     return (
         <footer className="bg-white border-t border-gray-300 pt-16 pb-8">
-            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 items-center">
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-12 lg:gap-8 mb-12">
                     {/* Brand */}
                     <div className="flex flex-col space-y-4">
                         <a href="#home" className="text-2xl font-extrabold tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-indigo-600 inline-block w-fit">
-                            Portfolio
+                            M.USMAN
                         </a>
                         <p className="text-gray-500 leading-relaxed text-sm max-w-sm">
                             Building high-performance, beautiful, and scalable web applications. Let's create something amazing together.

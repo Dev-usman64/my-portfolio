@@ -1,3 +1,5 @@
+import { motion } from "framer-motion"
+
 export function Skills() {
 
     const skills = [
@@ -67,12 +69,15 @@ export function Skills() {
                     <div className=" py-20 ">
 
                         <div className="w-full items-center">
-                            <div className="grid grid-cols-1 
-                            
+                            <div
+                                className="grid grid-cols-1 
                             sm:grid-cols-2 
                             lg:grid-cols-4 gap-6 p-4 items-center">
                                 {skills.map((skill) => (
-                                    <div key={skill.id} className="p-7 rounded-lg items
+                                    <motion.div
+                                        initial="initial"
+                                        whileHover="hover"
+                                        key={skill.id} className="p-7 rounded-lg items
                                     w-full h-70
                                     bg-white border border-gray-200  shadow-sm hover:shadow-2xl transition-shadow duration-300">
                                         <div className={`w-17 h-17 mx-auto p-2 mt-5 shadow-lg ${skill.shadow} 
@@ -82,7 +87,7 @@ export function Skills() {
                                         </div>
                                         <h3 className="text-xl text-center mt-8 font-bold mb-2">{skill.title}</h3>
                                         <p className="text-gray-600 text-center mt-2 text-md">{skill.desc}</p>
-                                    </div>
+                                    </motion.div>
                                 ))}
                             </div>
                         </div>

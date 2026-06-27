@@ -1,10 +1,11 @@
 import { ArrowRightCircle } from 'iconoir-react';
+import { motion } from 'motion/react';
 
 export function Hero() {
     return (
         <div className="bg-white mt-20">
-            <section className="bg-opacity-30 pt-20 sm:py-16 lg:py-24">
-                <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
+            <section className="bg-opacity-30 pt-20 sm:py-16 lg:py-24 ">
+                <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8" >
                     <div className="grid items-center grid-cols-1 gap-12 md:grid-cols-2">
                         <div className="w-full items-center">
                             <p className="text-base font-semibold text-center
@@ -13,7 +14,7 @@ export function Hero() {
                             xl:text-left
                             tracking-wider text-blue-600 uppercase">Hello World! </p>
                             <h1 className="mt-3 text-3xl font-bold text-black text-center
-                            sm:text-4xl 
+                            sm:text-4xl    
                             md:text-left md:text-4xl
                             lg:mt-4 lg:text-5xl lg:text-left
                             xl:text-left xl:text-6xl
@@ -49,7 +50,12 @@ export function Hero() {
                             </div>
                         </div>
 
-                        <div className=" flex justify-center-safe align-middle">
+                        <motion.div
+                            initial={{ opacity: 0, y: 10 }}
+                            animate={{ opacity: 1, y: 0 }}
+                            exit={{ opacity: 0, y: -50 }}
+                            transition={{ duration: 2, ease: "easeInOut" }}
+                            className=" flex justify-center-safe align-middle">
 
                             <img className="
                                 w-fit  h-fit
@@ -58,7 +64,7 @@ export function Hero() {
                                 xl:w-fit xl:h-fit
                                  " height="90px" width="100px" src="/my-pic.png" alt="" />
 
-                        </div>
+                        </motion.div>
                     </div>
                 </div>
             </section>

@@ -1,5 +1,5 @@
 import { useState } from "react";
-
+import { SectionHead } from "./sectionhead"
 export function Faq() {
     const faqData = [
         {
@@ -35,21 +35,15 @@ export function Faq() {
         setOpenIndex(openIndex === index ? null : index);
     };
 
+    const subtitle = "FAQ"
+    const title = "Frequently Asked Questions"
+    const description = "Everything you need to know about my services, workflow, and technical expertise."
+
     return (
         <section className="bg-gray-50 py-24">
             <div className="px-4 mx-auto max-w-4xl sm:px-6 lg:px-8">
                 {/* Header Section */}
-                <div className="text-center mb-16">
-                    <p className="text-sm font-bold tracking-widest text-blue-600 uppercase mb-3">
-                        FAQ
-                    </p>
-                    <h2 className="text-3xl font-extrabold text-gray-900 sm:text-4xl lg:text-5xl mb-4">
-                        Frequently Asked Questions
-                    </h2>
-                    <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-                        Everything you need to know about my services, workflow, and technical expertise.
-                    </p>
-                </div>
+                <SectionHead subtitle={subtitle} title={title} description={description} />
 
                 {/* FAQ Items */}
                 <div className="space-y-4">

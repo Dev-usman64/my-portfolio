@@ -66,7 +66,7 @@ export function Skills() {
                             xl:text-center 
                             ">I build seamless digital experiences using modern, industry-leading web tools.</p>
                     </div>
-                    <div className=" py-20 ">
+                    <div className=" py-20">
 
                         <div className="w-full items-center">
                             <div

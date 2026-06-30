@@ -66,10 +66,15 @@ export function Skills() {
                             xl:text-center 
                             ">I build seamless digital experiences using modern, industry-leading web tools.</p>
                     </div>
-                    <div className=" py-20">
+                    <div className=" py-20 ">
 
                         <div className="w-full items-center">
-                            <div
+                            <motion.div
+
+                                initial={{ y: 100, opacity: 0 }}
+                                whileInView={{ y: 0, opacity: 1 }}
+                                viewport={{ once: true, amount: 0.5, }}
+                                transition={{ duration: 1, stiffness: 100 }}
                                 className="grid grid-cols-1 
                             sm:grid-cols-2 
                             lg:grid-cols-4 gap-6 p-4 items-center">
@@ -89,7 +94,7 @@ export function Skills() {
                                         <p className="text-gray-600 text-center mt-2 text-md">{skill.desc}</p>
                                     </motion.div>
                                 ))}
-                            </div>
+                            </motion.div>
                         </div>
 
 

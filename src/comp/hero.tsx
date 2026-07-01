@@ -51,10 +51,10 @@ export function Hero() {
                         </div>
 
                         <motion.div
-                            initial={{ opacity: 0, y: 10 }}
-                            animate={{ opacity: 1, y: 0 }}
-                            exit={{ opacity: 0, y: -50 }}
-                            transition={{ duration: 2, ease: "easeInOut" }}
+                            initial={{ y: 100, opacity: 0 }}
+                            whileInView={{ y: 0, opacity: 1 }}
+                            viewport={{ once: true, amount: 0.5, }}
+                            transition={{ duration: 2, stiffness: 100 }}
                             className=" flex justify-center-safe align-middle">
 
                             <img className="

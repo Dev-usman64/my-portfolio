@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { OpenNewWindow } from 'iconoir-react';
-
+import { motion } from 'framer-motion';
 export function Cards(props) {
     const [tilt, setTilt] = useState({ x: 0, y: 0 });
     const threshold = 12;
@@ -13,7 +13,11 @@ export function Cards(props) {
     };
 
     return (
-        <div
+        <motion.div
+            initial={{ x: 100, opacity: 0 }}
+            whileInView={{ x: 0, opacity: 1 }}
+            viewport={{ once: true, amount: 0.5, }}
+            transition={{ duration: 1, stiffness: 100 }}
             className=" border-b-3 border-blue-600 border-x-0 border-t-0 relative flex flex-col justify-between rounded-2xl shadow-lg hover:shadow-2xl overflow-hidden transition-all duration-300 ease-out cursor-pointer w-full h-[430px] bg-white border"
             onMouseMove={handleMove}
             onMouseLeave={() => setTilt({ x: 0, y: 0 })}
@@ -53,6 +57,6 @@ export function Cards(props) {
                     <OpenNewWindow className="w-4 h-4" />
                 </a>
             </div>
-        </div>
+        </motion.div>
     );
 }

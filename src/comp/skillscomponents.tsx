@@ -70,18 +70,15 @@ export function Skills() {
 
                         <div className="w-full items-center">
                             <motion.div
-
-                                initial={{ y: 100, opacity: 0 }}
-                                whileInView={{ y: 0, opacity: 1 }}
-                                viewport={{ once: true, amount: 0.5, }}
-                                transition={{ duration: 1, stiffness: 100 }}
                                 className="grid grid-cols-1 
                             sm:grid-cols-2 
                             lg:grid-cols-4 gap-6 p-4 items-center">
                                 {skills.map((skill) => (
                                     <motion.div
-                                        initial="initial"
-                                        whileHover="hover"
+                                        initial={{ y: 100, opacity: 0 }}
+                                        whileInView={{ y: 0, opacity: 1 }}
+                                        viewport={{ once: true, amount: 0.5, }}
+                                        transition={{ duration: 1, stiffness: 100 }}
                                         key={skill.id} className="p-7 rounded-lg items
                                     w-full h-70
                                     bg-white border border-gray-200  shadow-sm hover:shadow-2xl transition-shadow duration-300">
